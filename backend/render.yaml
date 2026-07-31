@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: techhub-store-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGODB_URI
+        value: your_mongodb_atlas_uri
+      - key: JWT_SECRET
+        value: your_jwt_secret
+      - key: JWT_REFRESH_SECRET
+        value: your_jwt_refresh_secret
+      - key: CLOUDINARY_CLOUD_NAME
+        value: your_cloud_name
+      - key: CLOUDINARY_API_KEY
+        value: your_api_key
+      - key: CLOUDINARY_API_SECRET
+        value: your_api_secret
